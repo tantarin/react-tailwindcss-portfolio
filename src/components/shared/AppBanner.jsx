@@ -22,7 +22,7 @@ const AppBanner = () => {
 					transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.1 }}
 					className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
 				>
-					Таринская Татьяна
+					Tarinskaya Tatyana
 				</motion.h1>
 				<motion.p
 					initial={{ opacity: 0 }}
@@ -30,7 +30,7 @@ const AppBanner = () => {
 					transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
 					className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
 				>
-					Я Full-Stack Developer
+					Full-Stack Developer
 				</motion.p>
 				<motion.div
 					initial={{ opacity: 0 }}
@@ -51,12 +51,12 @@ const AppBanner = () => {
 					</a>
 				</motion.div>
 			</div>
-			<div className="w-full sm:w-1/3 text-center">
+			<div className="w-full sm:w-1/3 text-center cursor-pointer shadow-lg rounded-lg">
 				<motion.img
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.4 }}
-					className="h-auto max-w-xs transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0 inline-block"
+					className={`h-auto w-full max-w-xs transition-all duration-300 rounded-lg inline-block ${activeTheme === 'dark' ? 'filter grayscale hover:grayscale-0' : ''}`}
 					src={activeTheme === 'dark' ? me_1 : me_1}
 					alt="image description"
 				/>
